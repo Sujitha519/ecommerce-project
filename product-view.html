@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product View - ShopCentral</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo"><a href="index.html"><i class="fa-solid fa-bag-shopping"></i> ShopCentral</a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="category.html">Categories</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="nav-actions">
+            <a href="search.html" class="icon-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="cart.html" class="icon-btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="badge" id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <section class="section" style="max-width: 900px; margin: 0 auto;">
+        <div class="product-detail-container" style="display: flex; gap: 2rem; background: white; padding: 2rem; border-radius: 8px;">
+            <div style="flex: 1;">
+                <img id="detail-img" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500" alt="Product Image" style="width: 100%; border-radius: 8px;">
+            </div>
+            <div style="flex: 1;">
+                <h2 id="detail-title">Wireless Headphones</h2>
+                <div class="ratings" style="color: #f39c12; margin: 0.5rem 0;"><i class="fa-solid fa-star"></i> 4.8 / 5.0</div>
+                <h3 id="detail-price" style="color: #2ecc71; margin-bottom: 1rem;">$199</h3>
+                <p id="detail-desc" style="margin-bottom: 1.5rem; color: #555;">High quality audio with active noise cancellation and long battery life.</p>
+                <button class="btn primary-btn" onclick="addToCart(1)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 ShopCentral. Built for InternshipStudio Project.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

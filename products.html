@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - ShopCentral</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo"><a href="index.html"><i class="fa-solid fa-bag-shopping"></i> ShopCentral</a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="category.html">Categories</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="nav-actions">
+            <a href="search.html" class="icon-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="cart.html" class="icon-btn cart-badge-container">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="badge" id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="catalog-container">
+        <aside class="sidebar">
+            <h3>Filters</h3>
+            <div class="filter-group">
+                <h4>Category</h4>
+                <ul>
+                    <li><button onclick="filterCategory('all')" class="filter-btn">All Products</button></li>
+                    <li><button onclick="filterCategory('electronics')" class="filter-btn">Electronics</button></li>
+                    <li><button onclick="filterCategory('fashion')" class="filter-btn">Fashion</button></li>
+                    <li><button onclick="filterCategory('sports')" class="filter-btn">Sports</button></li>
+                </ul>
+            </div>
+            <div class="filter-group">
+                <h4>Max Price: $<span id="price-val">300</span></h4>
+                <input type="range" id="price-range" min="10" max="300" value="300" oninput="filterPrice(this.value)">
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <h2 class="section-title">All Products</h2>
+            <div class="product-grid" id="all-products">
+                <!-- Populated via script.js -->
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 ShopCentral. Built for InternshipStudio Project.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

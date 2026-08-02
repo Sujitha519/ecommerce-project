@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopCentral - Modern E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar Component -->
+    <header class="navbar">
+        <div class="logo"><a href="index.html"><i class="fa-solid fa-bag-shopping"></i> ShopCentral</a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="category.html">Categories</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="nav-actions">
+            <a href="search.html" class="icon-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="cart.html" class="icon-btn cart-badge-container">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="badge" id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Banner Component -->
+    <section class="slider-container">
+        <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200');">
+            <div class="slide-content">
+                <h2>Summer Collection 2026</h2>
+                <p>Up to 50% off on premium fashion & accessories</p>
+                <a href="products.html" class="btn primary-btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop by Category -->
+    <section class="section">
+        <h2 class="section-title">Shop by Category</h2>
+        <div class="category-grid">
+            <div class="cat-card">
+                <i class="fa-solid fa-laptop"></i>
+                <h3>Electronics</h3>
+                <a href="category.html?cat=electronics" class="cat-link">Explore</a>
+            </div>
+            <div class="cat-card">
+                <i class="fa-solid fa-shirt"></i>
+                <h3>Fashion</h3>
+                <a href="category.html?cat=fashion" class="cat-link">Explore</a>
+            </div>
+            <div class="cat-card">
+                <i class="fa-solid fa-house"></i>
+                <h3>Home & Living</h3>
+                <a href="category.html?cat=home" class="cat-link">Explore</a>
+            </div>
+            <div class="cat-card">
+                <i class="fa-solid fa-dumbbell"></i>
+                <h3>Sports</h3>
+                <a href="category.html?cat=sports" class="cat-link">Explore</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Products Grid -->
+    <section class="section bg-light">
+        <h2 class="section-title">Latest Products</h2>
+        <div class="product-grid" id="latest-products">
+            <!-- Dynamically populated via script.js -->
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="feature-box">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h4>Free Shipping</h4>
+            <p>On orders over $50</p>
+        </div>
+        <div class="feature-box">
+            <i class="fa-solid fa-headset"></i>
+            <h4>24/7 Support</h4>
+            <p>Dedicated customer care</p>
+        </div>
+        <div class="feature-box">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h4>Secure Payments</h4>
+            <p>100% encrypted checkouts</p>
+        </div>
+        <div class="feature-box">
+            <i class="fa-solid fa-rotate-left"></i>
+            <h4>30-Day Return</h4>
+            <p>Money-back guarantee</p>
+        </div>
+    </section>
+
+    <!-- Footer Component -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>ShopCentral</h3>
+                <p>Your one-stop destination for quality products at unbeatable prices.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="products.html">All Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="cart.html">View Cart</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ShopCentral. Built for InternshipStudio Project.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- jQuery & Custom Script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

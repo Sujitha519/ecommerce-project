@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - ShopCentral</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo"><a href="index.html"><i class="fa-solid fa-bag-shopping"></i> ShopCentral</a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="category.html" class="active">Categories</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="nav-actions">
+            <a href="search.html" class="icon-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="cart.html" class="icon-btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="badge" id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <section class="section">
+        <h2 class="section-title">Explore Categories</h2>
+        <div class="category-grid">
+            <div class="cat-card">
+                <i class="fa-solid fa-laptop"></i>
+                <h3>Electronics</h3>
+                <p>Latest gadgets, headphones, and smart devices.</p>
+                <a href="products.html" class="cat-link">View Electronics</a>
+            </div>
+            <div class="cat-card">
+                <i class="fa-solid fa-shirt"></i>
+                <h3>Fashion</h3>
+                <p>Trending apparel, jackets, and modern street style.</p>
+                <a href="products.html" class="cat-link">View Fashion</a>
+            </div>
+            <div class="cat-card">
+                <i class="fa-solid fa-dumbbell"></i>
+                <h3>Sports</h3>
+                <p>Gear, footwear, and equipment for active living.</p>
+                <a href="products.html" class="cat-link">View Sports</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 ShopCentral. Built for InternshipStudio Project.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
